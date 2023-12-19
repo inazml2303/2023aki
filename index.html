@@ -102,15 +102,23 @@
      <input type="text" name="moji" size="30" value="">
   </form>
   <h1>練習問6-13</h1>
-  <form>
-     <input type="button" value="Timer" onclick="setTimeout('mes()',3000)">
-  </form>
-  <br>
   <form name="timer13">
      <input type="button" value="スタート" onclick="hyoji13()">
     <br>
- <input type="text" name="moji13" size="30" value=>
+ <input type="text" name="moji13" size="30" value="">
   </form>
+    function hyoji13(){//表示する文字
+    var str13="一文字ずつ表示します。";
+    //テキストボックスの文字数
+    var cnt13 =document.timer13.,moji13.value.length;
+    //文字が全部表示されているか確認
+    if(cnt13<11){
+      //現在より１文字多く切り出して表示
+      document.timer13.moji13.value=str13.substr(0,cnt13+1);}else{
+      //全て表示されたら、空文字に戻す
+      document.timer13.moji13.value="";}
+    //setTimeout()を含む関数を呼び出す
+      settimeout("hyoji13()",1000);}
   <br>
   <h1>練習問題6.14</h1>
   <h1>練習問題7.1テキストの入力</h1>
